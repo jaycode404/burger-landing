@@ -301,7 +301,7 @@ textarea{
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/public/assets/restaurant.webp);
+  background-image: url(/assets/restaurant.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
