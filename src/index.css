@@ -192,7 +192,7 @@ a {
   .nosotro-info > a {
     align-self: start;
   }
-  .nosotro-info h2{
+  .nosotro-info h2 {
     font-size: 35px;
   }
   .nosotro-info {
@@ -213,7 +213,7 @@ a {
   /* PLATILLOS------------------ */
   .section-title {
     font-size: 25px;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
   }
   .platillos-container {
     display: flex;
@@ -312,7 +312,8 @@ a {
 
   .contacto-container {
     position: relative;
-    min-height: 100vh;
+    height: auto;
+    min-height: 60vh;
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 4rem;
@@ -2053,4 +2054,14 @@ a {
     position: relative;
     z-index: 2; /* Asegura que el contenido esté por encima del pseudo-elemento */
   }
+}
+footer {
+  text-align: center;
+  height: 20vh;
+  padding: 2rem;
+  display: flex;
+  place-content: center;
+}
+.footer-section {
+  
 }

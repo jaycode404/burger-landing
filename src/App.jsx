@@ -5,6 +5,7 @@ import Nosotros from "./componentes/Nosotros";
 import Platillos from "./componentes/Platillos";
 import Clientes from "./componentes/Clientes";
 import Contacto from "./componentes/Contacto";
+import Footer from "./componentes/Footer";
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <Header />
           <Nosotros />
-          <Platillos/>
-          <Clientes/>
-          <Contacto/>
+          <Platillos />
+          <Clientes />
+          <Contacto />
         </Suspense>
       </main>
+      <Footer />
     </>
   );
 }
