@@ -125,7 +125,7 @@ a {
   }
   /* HEADER------------------------------------- */
   header {
-    height: 40vh;
+    height: 30vh;
   }
   .header-title {
     font-family: var(--secondary-font);
@@ -150,9 +150,9 @@ a {
   .header-image {
     position: absolute;
     display: flex;
-    width: 16rem;
+    width: 17rem;
     top: 3.3rem;
-    left: 16%;
+    left: 9%;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
   }
