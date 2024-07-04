@@ -6,7 +6,7 @@ export default function Contacto() {
     <section id="contacto">
       <div className="contacto-container">
         <h2 className="section-title">Contacto ✉</h2>
-        <h3 className="contacto-msj">Dejanos tu mensaje</h3>
+        <h3 className="contacto-msj">Déjanos tu mensaje:</h3>
 
         <ContactForm />
       </div>

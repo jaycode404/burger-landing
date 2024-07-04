@@ -150,9 +150,9 @@ a {
   .header-image {
     position: absolute;
     display: flex;
-    width: 10rem;
-    top: 4.2rem;
-    left: 25%;
+    width: 16rem;
+    top: 3.3rem;
+    left: 16%;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
   }
@@ -233,15 +233,15 @@ a {
   }
   .product-img {
     display: flex;
-    width: 8rem;
+    width: 70%;
     margin: 0 auto;
   }
   .product-name {
     margin-bottom: 1rem;
-    font-size: 8px;
+    font-size: 15px;
   }
   .product-desc {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 1.5;
   }
   /*CLIENTES --------------------- */
@@ -337,18 +337,16 @@ a {
   }
 }
 /* xs */
-@media (min-width: 475px) {
+@media (min-width: 425px) {
   .container {
-    max-width: 475px;
+    max-width: 425px;
   }
-  .container {
-    max-width: 1536px;
-  }
-  /* GENERAL----------------------------- */
   section {
     text-align: center;
-    margin: 2rem;
+    margin: 2rem 0rem;
+    padding: 0rem 1rem;
     height: auto;
+    width: 100%;
     margin-bottom: 4rem;
   }
   .box {
@@ -392,12 +390,13 @@ a {
   .navbar {
     display: flex;
     justify-content: space-around;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     font-weight: var(--large-weight);
+    font-size: 13px;
   }
   .navlist {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   .nav-link:hover {
     scale: 1.1;
@@ -405,12 +404,12 @@ a {
   }
   /* HEADER------------------------------------- */
   header {
-    height: 100vh;
+    height: 40vh;
   }
   .header-title {
     font-family: var(--secondary-font);
     text-align: center;
-    font-size: 60px;
+    font-size: 22px;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
     line-height: 1;
@@ -430,9 +429,9 @@ a {
   .header-image {
     position: absolute;
     display: flex;
-    width: 40rem;
+    width: 15rem;
     top: 4rem;
-    left: 25%;
+    left: 20%;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
   }
@@ -449,20 +448,23 @@ a {
 
   /* NOSOTROS --------------------------------- */
   .parrafo {
+    font-size: 13px;
     font-weight: var(--mid-weight);
-    line-height: 1.4rem;
+    line-height: 1rem;
   }
   .nosotros-container > h2 {
     text-align: start;
   }
   .nosotros-container {
-    margin: 0 auto;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
     background-color: var(--green-color);
     color: var(--primary-color);
-    padding: 2rem;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
     border-radius: 20px;
   }
 
@@ -475,43 +477,48 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 14px;
   }
   .nosotros-desc {
     font-weight: var(--large-weight);
     font-family: var(--secondary-font);
-    font-size: 30px;
+    font-size: 17px;
     text-align: start;
     text-transform: uppercase;
   }
   /* PLATILLOS------------------ */
   .section-title {
-    font-size: 90px;
-    /* font-family: var(--secondary-font); */
-    margin-bottom: 4rem;
+    font-size: 36px;
+    margin-bottom: 2rem;
   }
   .platillos-container {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
     gap: 1rem;
+    margin: 0 auto;
   }
   .product-card {
-    width: auto;
+    width: 70%;
     height: auto;
     max-height: 18rem;
     background-color: #853636;
     border-radius: 10px;
     padding: 1rem;
     text-align: start;
+    margin: 0 auto;
   }
   .product-card:nth-child(odd) {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
   .product-img {
     display: flex;
-    width: 8rem;
+    width: 50%;
     margin: 0 auto;
   }
   .product-name {
     margin-bottom: 1rem;
+    font-size: 18px;
   }
   .product-desc {
     font-size: 12px;
@@ -520,14 +527,16 @@ a {
   /*CLIENTES --------------------- */
   .review-container {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
   }
 
   .rev-card p {
     width: 70%;
   }
   .rev-card:nth-child(even) {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
   .rev-card {
     text-align: start;
@@ -544,6 +553,7 @@ a {
     font-weight: var(--large-weight);
     line-height: 2;
     margin-top: 2rem;
+    padding: 1rem;
   }
 
   /* CONTACTO---------- */
@@ -559,12 +569,13 @@ a {
   textarea {
     font-family: var(--primary-font);
     padding: 0.2rem;
+    max-width: 100%;
   }
   .form-card {
     text-align: start;
     height: auto;
     max-height: 18rem;
-    width: fit-content;
+    max-width: 80%;
     padding: 1rem;
     margin: 0 auto;
     background-color: var(--green-color);
@@ -583,6 +594,7 @@ a {
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 4rem;
+    max-width: 100%;
   }
 
   .contacto-container::before {
@@ -612,11 +624,12 @@ a {
   .container {
     max-width: 1536px;
   }
-  /* GENERAL----------------------------- */
   section {
     text-align: center;
-    margin: 2rem;
+    margin: 2rem 0rem;
+    padding: 0rem 1rem;
     height: auto;
+    width: 100%;
     margin-bottom: 4rem;
   }
   .box {
@@ -660,12 +673,13 @@ a {
   .navbar {
     display: flex;
     justify-content: space-around;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     font-weight: var(--large-weight);
+    font-size: 13px;
   }
   .navlist {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   .nav-link:hover {
     scale: 1.1;
@@ -673,12 +687,12 @@ a {
   }
   /* HEADER------------------------------------- */
   header {
-    height: 100vh;
+    height: 40vh;
   }
   .header-title {
     font-family: var(--secondary-font);
     text-align: center;
-    font-size: 60px;
+    font-size: 22px;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
     line-height: 1;
@@ -698,9 +712,9 @@ a {
   .header-image {
     position: absolute;
     display: flex;
-    width: 40rem;
+    width: 15rem;
     top: 4rem;
-    left: 25%;
+    left: 20%;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
   }
@@ -717,19 +731,23 @@ a {
 
   /* NOSOTROS --------------------------------- */
   .parrafo {
+    font-size: 13px;
     font-weight: var(--mid-weight);
-    line-height: 1.4rem;
+    line-height: 1rem;
   }
   .nosotros-container > h2 {
     text-align: start;
   }
   .nosotros-container {
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
     background-color: var(--green-color);
     color: var(--primary-color);
-    padding: 2rem;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
     border-radius: 20px;
   }
 
@@ -742,35 +760,39 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 14px;
   }
   .nosotros-desc {
     font-weight: var(--large-weight);
     font-family: var(--secondary-font);
-    font-size: 30px;
+    font-size: 17px;
     text-align: start;
     text-transform: uppercase;
   }
   /* PLATILLOS------------------ */
   .section-title {
-    font-size: 90px;
-    /* font-family: var(--secondary-font); */
-    margin-bottom: 4rem;
+    font-size: 36px;
+    margin-bottom: 2rem;
   }
   .platillos-container {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
     gap: 1rem;
+    margin: 0 auto;
   }
   .product-card {
-    width: auto;
+    width: 70%;
     height: auto;
     max-height: 18rem;
     background-color: #853636;
     border-radius: 10px;
     padding: 1rem;
     text-align: start;
+    margin: 0 auto;
   }
   .product-card:nth-child(odd) {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
   .product-img {
     display: flex;
@@ -779,22 +801,25 @@ a {
   }
   .product-name {
     margin-bottom: 1rem;
+    font-size: 8px;
   }
   .product-desc {
-    font-size: 12px;
+    font-size: 8px;
     line-height: 1.5;
   }
   /*CLIENTES --------------------- */
   .review-container {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
   }
 
   .rev-card p {
     width: 70%;
   }
   .rev-card:nth-child(even) {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
   .rev-card {
     text-align: start;
@@ -811,6 +836,7 @@ a {
     font-weight: var(--large-weight);
     line-height: 2;
     margin-top: 2rem;
+    padding: 1rem;
   }
 
   /* CONTACTO---------- */
@@ -826,12 +852,13 @@ a {
   textarea {
     font-family: var(--primary-font);
     padding: 0.2rem;
+    max-width: 100%;
   }
   .form-card {
     text-align: start;
     height: auto;
     max-height: 18rem;
-    width: fit-content;
+    max-width: 80%;
     padding: 1rem;
     margin: 0 auto;
     background-color: var(--green-color);
@@ -850,6 +877,7 @@ a {
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 4rem;
+    max-width: 100%;
   }
 
   .contacto-container::before {
@@ -883,9 +911,11 @@ a {
   /* GENERAL----------------------------- */
   section {
     text-align: center;
-    margin: 2rem;
+    margin: 2rem 0rem;
+    padding: 0rem 1rem;
     height: auto;
-    margin-bottom: 4rem;
+    width: 80%;
+    margin: 4rem auto;
   }
   .box {
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* horizontal offset | vertical offset | blur radius | spread radius | color */
@@ -928,12 +958,13 @@ a {
   .navbar {
     display: flex;
     justify-content: space-around;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     font-weight: var(--large-weight);
+    font-size: 16px;
   }
   .navlist {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
   }
   .nav-link:hover {
     scale: 1.1;
@@ -941,12 +972,14 @@ a {
   }
   /* HEADER------------------------------------- */
   header {
-    height: 100vh;
+    height: 60vh;
   }
   .header-title {
     font-family: var(--secondary-font);
     text-align: center;
-    font-size: 60px;
+    font-size: 32px;
+    width: 70%;
+    margin: 0 auto;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
     line-height: 1;
@@ -966,8 +999,8 @@ a {
   .header-image {
     position: absolute;
     display: flex;
-    width: 40rem;
-    top: 4rem;
+    width: 25rem;
+    top: 3.5rem;
     left: 25%;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
@@ -985,84 +1018,99 @@ a {
 
   /* NOSOTROS --------------------------------- */
   .parrafo {
+    font-size: 15px;
     font-weight: var(--mid-weight);
-    line-height: 1.4rem;
+    line-height: 1.5rem;
   }
   .nosotros-container > h2 {
     text-align: start;
   }
   .nosotros-container {
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
     background-color: var(--green-color);
     color: var(--primary-color);
-    padding: 2rem;
+    padding: 1rem;
+    width: 90%;
+    margin: 0 auto;
     border-radius: 20px;
   }
 
   .nosotro-info > a {
     align-self: start;
   }
-  .nosotro-info {
+  .nosotro-info h2 {
     text-align: start;
     width: 80%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-size: 25px;
   }
   .nosotros-desc {
     font-weight: var(--large-weight);
     font-family: var(--secondary-font);
-    font-size: 30px;
+    font-size: 28px;
     text-align: start;
     text-transform: uppercase;
   }
   /* PLATILLOS------------------ */
   .section-title {
-    font-size: 90px;
-    /* font-family: var(--secondary-font); */
-    margin-bottom: 4rem;
+    font-size: 56px;
+    margin-bottom: 2rem;
   }
   .platillos-container {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
     gap: 1rem;
+    margin: 0 auto;
   }
   .product-card {
-    width: auto;
+    width: 70%;
     height: auto;
     max-height: 18rem;
     background-color: #853636;
     border-radius: 10px;
     padding: 1rem;
     text-align: start;
+    margin: 0 auto;
   }
   .product-card:nth-child(odd) {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
   .product-img {
     display: flex;
-    width: 8rem;
+    width: 50%;
     margin: 0 auto;
   }
   .product-name {
     margin-bottom: 1rem;
+    font-size: 19px;
   }
   .product-desc {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 1.5;
   }
   /*CLIENTES --------------------- */
   .review-container {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    padding: 1rem;
   }
 
+  .rev-card h4 {
+    font-size: 22px;
+  }
   .rev-card p {
     width: 70%;
+    font-size: 20px;
   }
   .rev-card:nth-child(even) {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
   .rev-card {
     text-align: start;
@@ -1075,10 +1123,11 @@ a {
   }
 
   .clientes-discurso {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: var(--large-weight);
     line-height: 2;
     margin-top: 2rem;
+    padding: 1rem;
   }
 
   /* CONTACTO---------- */
@@ -1094,12 +1143,13 @@ a {
   textarea {
     font-family: var(--primary-font);
     padding: 0.2rem;
+    max-width: 100%;
   }
   .form-card {
     text-align: start;
     height: auto;
     max-height: 18rem;
-    width: fit-content;
+    max-width: 80%;
     padding: 1rem;
     margin: 0 auto;
     background-color: var(--green-color);
@@ -1118,6 +1168,7 @@ a {
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 4rem;
+    max-width: 100%;
   }
 
   .contacto-container::before {
@@ -1153,7 +1204,8 @@ a {
     text-align: center;
     margin: 2rem;
     height: auto;
-    margin-bottom: 4rem;
+    margin: 4rem auto;
+    width: 80%;
   }
   .box {
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* horizontal offset | vertical offset | blur radius | spread radius | color */
@@ -1214,7 +1266,7 @@ a {
   .header-title {
     font-family: var(--secondary-font);
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards;
     line-height: 1;
@@ -1234,9 +1286,9 @@ a {
   .header-image {
     position: absolute;
     display: flex;
-    width: 40rem;
+    width: 30rem;
     top: 4rem;
-    left: 25%;
+    left: 27%;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
   }
@@ -1255,9 +1307,13 @@ a {
   .parrafo {
     font-weight: var(--mid-weight);
     line-height: 1.4rem;
+    font-size: 18px;
   }
   .nosotros-container > h2 {
     text-align: start;
+  }
+  .nosotros-container h2 {
+    font-size: 40px;
   }
   .nosotros-container {
     height: auto;
@@ -1288,12 +1344,13 @@ a {
   }
   /* PLATILLOS------------------ */
   .section-title {
-    font-size: 90px;
+    font-size: 70px;
     /* font-family: var(--secondary-font); */
     margin-bottom: 4rem;
   }
   .platillos-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
   .product-card {
@@ -1306,23 +1363,25 @@ a {
     text-align: start;
   }
   .product-card:nth-child(odd) {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
   .product-img {
     display: flex;
-    width: 8rem;
+    width: 50%;
     margin: 0 auto;
   }
   .product-name {
     margin-bottom: 1rem;
+    font-size: 20px;
   }
   .product-desc {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.5;
   }
   /*CLIENTES --------------------- */
   .review-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
@@ -1330,9 +1389,12 @@ a {
     width: 70%;
   }
   .rev-card:nth-child(even) {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
   .rev-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: start;
     height: auto;
     max-height: 18rem;
@@ -1343,7 +1405,7 @@ a {
   }
 
   .clientes-discurso {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: var(--large-weight);
     line-height: 2;
     margin-top: 2rem;
@@ -1353,6 +1415,7 @@ a {
   label {
     font-weight: var(--large-weight);
     margin-bottom: 1rem;
+    font-size: 20px;
   }
   input {
     width: 100%;
@@ -1386,6 +1449,9 @@ a {
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 4rem;
+  }
+  .contacto-container h3 {
+    font-size: 25px;
   }
 
   .contacto-container::before {
@@ -1412,16 +1478,16 @@ a {
 
 /* xl */
 @media (min-width: 1280px) {
+  /* GENERAL----------------------------- */
   .container {
     max-width: 1280px;
   }
-
-  /* GENERAL----------------------------- */
   section {
     text-align: center;
     margin: 2rem;
     height: auto;
-    margin-bottom: 4rem;
+    margin: 4rem auto;
+    width: 80%;
   }
   .box {
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* horizontal offset | vertical offset | blur radius | spread radius | color */
@@ -1466,6 +1532,7 @@ a {
     justify-content: space-around;
     padding: 1.5rem;
     font-weight: var(--large-weight);
+    font-size: 20px;
   }
   .navlist {
     display: flex;
@@ -1477,7 +1544,7 @@ a {
   }
   /* HEADER------------------------------------- */
   header {
-    height: 100vh;
+    height: 90vh;
   }
   .header-title {
     font-family: var(--secondary-font);
@@ -1502,9 +1569,9 @@ a {
   .header-image {
     position: absolute;
     display: flex;
-    width: 40rem;
-    top: 4rem;
-    left: 25%;
+    width: 50rem;
+    top: 3rem;
+    left: 24%;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
   }
@@ -1522,10 +1589,14 @@ a {
   /* NOSOTROS --------------------------------- */
   .parrafo {
     font-weight: var(--mid-weight);
-    line-height: 1.4rem;
+    line-height: 1.6rem;
+    font-size: 20px;
   }
   .nosotros-container > h2 {
     text-align: start;
+  }
+  .nosotros-container h2 {
+    font-size: 60px;
   }
   .nosotros-container {
     height: auto;
@@ -1550,58 +1621,69 @@ a {
   .nosotros-desc {
     font-weight: var(--large-weight);
     font-family: var(--secondary-font);
-    font-size: 30px;
+    font-size: 40px;
+    line-height: 2;
     text-align: start;
     text-transform: uppercase;
   }
   /* PLATILLOS------------------ */
   .section-title {
-    font-size: 90px;
+    font-size: 100px;
     /* font-family: var(--secondary-font); */
     margin-bottom: 4rem;
   }
   .platillos-container {
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   .product-card {
     width: auto;
-    height: auto;
-    max-height: 18rem;
+    min-height: 24rem;
     background-color: #853636;
     border-radius: 10px;
     padding: 1rem;
     text-align: start;
   }
   .product-card:nth-child(odd) {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
   .product-img {
     display: flex;
-    width: 8rem;
+    width: 50%;
     margin: 0 auto;
   }
   .product-name {
     margin-bottom: 1rem;
+    font-size: 30px;
   }
   .product-desc {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.5;
   }
   /*CLIENTES --------------------- */
   .review-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
   .rev-card p {
+    font-size: 25px;
     width: 70%;
   }
   .rev-card:nth-child(even) {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+  }
+  .rev-card h4 {
+    font-size: 29px;
   }
   .rev-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: start;
+
     height: auto;
     max-height: 18rem;
     width: auto;
@@ -1611,7 +1693,7 @@ a {
   }
 
   .clientes-discurso {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: var(--large-weight);
     line-height: 2;
     margin-top: 2rem;
@@ -1621,6 +1703,7 @@ a {
   label {
     font-weight: var(--large-weight);
     margin-bottom: 1rem;
+    font-size: 20px;
   }
   input {
     width: 100%;
@@ -1654,6 +1737,9 @@ a {
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 4rem;
+  }
+  .contacto-container h3 {
+    font-size: 25px;
   }
 
   .contacto-container::before {
@@ -1683,12 +1769,12 @@ a {
   .container {
     max-width: 1536px;
   }
-  /* GENERAL----------------------------- */
   section {
     text-align: center;
     margin: 2rem;
     height: auto;
-    margin-bottom: 4rem;
+    margin: 4rem auto;
+    width: 80%;
   }
   .box {
     box-shadow: 5px 5px 0px rgba(0, 0, 0, 1); /* horizontal offset | vertical offset | blur radius | spread radius | color */
@@ -1733,6 +1819,7 @@ a {
     justify-content: space-around;
     padding: 1.5rem;
     font-weight: var(--large-weight);
+    font-size: 20px;
   }
   .navlist {
     display: flex;
@@ -1744,7 +1831,7 @@ a {
   }
   /* HEADER------------------------------------- */
   header {
-    height: 100vh;
+    height: 90vh;
   }
   .header-title {
     font-family: var(--secondary-font);
@@ -1769,9 +1856,9 @@ a {
   .header-image {
     position: absolute;
     display: flex;
-    width: 40rem;
-    top: 4rem;
-    left: 25%;
+    width: 50rem;
+    top: 3rem;
+    left: 24%;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
   }
@@ -1789,10 +1876,14 @@ a {
   /* NOSOTROS --------------------------------- */
   .parrafo {
     font-weight: var(--mid-weight);
-    line-height: 1.4rem;
+    line-height: 1.6rem;
+    font-size: 20px;
   }
   .nosotros-container > h2 {
     text-align: start;
+  }
+  .nosotros-container h2 {
+    font-size: 60px;
   }
   .nosotros-container {
     height: auto;
@@ -1817,58 +1908,69 @@ a {
   .nosotros-desc {
     font-weight: var(--large-weight);
     font-family: var(--secondary-font);
-    font-size: 30px;
+    font-size: 40px;
+    line-height: 2;
     text-align: start;
     text-transform: uppercase;
   }
   /* PLATILLOS------------------ */
   .section-title {
-    font-size: 90px;
+    font-size: 100px;
     /* font-family: var(--secondary-font); */
     margin-bottom: 4rem;
   }
   .platillos-container {
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
   .product-card {
     width: auto;
-    height: auto;
-    max-height: 18rem;
+    min-height: 24rem;
     background-color: #853636;
     border-radius: 10px;
     padding: 1rem;
     text-align: start;
   }
   .product-card:nth-child(odd) {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
   .product-img {
     display: flex;
-    width: 8rem;
+    width: 50%;
     margin: 0 auto;
   }
   .product-name {
     margin-bottom: 1rem;
+    font-size: 30px;
   }
   .product-desc {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 1.5;
   }
   /*CLIENTES --------------------- */
   .review-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
 
   .rev-card p {
+    font-size: 25px;
     width: 70%;
   }
   .rev-card:nth-child(even) {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+  }
+  .rev-card h4 {
+    font-size: 29px;
   }
   .rev-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: start;
+
     height: auto;
     max-height: 18rem;
     width: auto;
@@ -1878,7 +1980,7 @@ a {
   }
 
   .clientes-discurso {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: var(--large-weight);
     line-height: 2;
     margin-top: 2rem;
@@ -1888,6 +1990,7 @@ a {
   label {
     font-weight: var(--large-weight);
     margin-bottom: 1rem;
+    font-size: 20px;
   }
   input {
     width: 100%;
@@ -1921,6 +2024,9 @@ a {
     overflow: hidden;
     border-radius: 10px;
     margin-bottom: 4rem;
+  }
+  .contacto-container h3 {
+    font-size: 25px;
   }
 
   .contacto-container::before {
