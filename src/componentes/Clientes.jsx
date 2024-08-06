@@ -11,7 +11,7 @@ export default function Clientes() {
     {
       img: "ruta-de-la-imagen-2.jpg",
       nombre: "Producto 2",
-      rate: 4.0,
+      rate: 4.5,
       review: "Excelente, cumplió con mis expectativas.",
     },
     {
@@ -20,12 +20,7 @@ export default function Clientes() {
       rate: 4.8,
       review: "Increíble producto, volvería a comprarlo.",
     },
-    {
-      img: "ruta-de-la-imagen-4.jpg",
-      nombre: "Producto 4",
-      rate: 3.7,
-      review: "Bueno, pero podría mejorar en algunos aspectos.",
-    },
+  
     {
       img: "ruta-de-la-imagen-5.jpg",
       nombre: "Producto 5",
@@ -43,7 +38,7 @@ export default function Clientes() {
           return (
             <div className="rev-card card">
               <h4>{nombre}</h4>
-              <p>{rate}</p>
+              <p className="rate">{rate}</p>
               <p>{review}</p>
             </div>
           );
