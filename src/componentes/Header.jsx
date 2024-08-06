@@ -6,8 +6,8 @@ export default function Header() {
       <div className="header-info">
         <h1 className="header-title">LA MEJOR HAMBUGUESA DEL CONDADO</h1>
       </div>
-      <div className="img-container">
-        <img className="header-image shadow" src="assets/burger.png" alt="burger" />
+      <div className="img-container shadow">
+        {/* <img className="header-image shadow" src="assets/burger.png" alt="burger" /> */}
       </div>
     </header>
   );
