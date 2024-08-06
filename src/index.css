@@ -267,13 +267,14 @@ a {
   .rev-card::before {
     position: absolute;
     content: "";
-    inset: 0 -2rem 0 0;
+    inset: 1rem 1rem 0 0;
     background-image: url(/assets/star.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    scale: 70%;
+    height: 4rem;
     z-index: -1;
+    opacity: 0.8;
   }
   .rev-card {
     position: relative;
@@ -564,12 +565,13 @@ a {
   .rev-card::before {
     position: absolute;
     content: "";
-    inset: 0 -2rem 0 0;
+    inset: 1rem 1rem 0 0;
     background-image: url(/assets/star.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    scale: 70%;
+    height: 4rem;
+    opacity: 0.8;
     z-index: -1;
   }
   .rev-card {
@@ -858,12 +860,13 @@ a {
   .rev-card::before {
     position: absolute;
     content: "";
-    inset: 0 -2rem 0 0;
+    inset: 1rem 1rem 0 0;
     background-image: url(/assets/star.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    scale: 70%;
+    opacity: 0.8;
+    height: 4rem;
     z-index: -1;
   }
   .rev-card {
@@ -1017,7 +1020,6 @@ a {
   }
   /* HEADER------------------------------------- */
   header {
-
     height: 75vh;
   }
   .header-title {
@@ -2145,7 +2147,6 @@ a {
   }
 }
 
-
 @media (min-width: 1420px) {
   /* GENERAL----------------------------- */
   .container {
@@ -2351,7 +2352,7 @@ a {
   .rev-card::before {
     position: absolute;
     content: "";
-    inset: 0.4rem -1rem 0 0;
+    inset: 1.4rem -1rem 0 0;
     background-image: url(/assets/star.png);
     background-position: right;
     background-repeat: no-repeat;
